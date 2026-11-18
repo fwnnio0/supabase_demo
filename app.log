@@ -40,3 +40,17 @@
 2026-11-17 15:48:13 [INFO] httpx: HTTP Request: GET https://dqhovbhgncpvruxuegms.supabase.co/rest/v1/contactos?select=%2A "HTTP/2 200 OK"
 2026-11-17 15:48:14 [INFO] httpx: HTTP Request: GET https://dqhovbhgncpvruxuegms.supabase.co/rest/v1/contactos?select=%2A "HTTP/2 200 OK"
 2026-11-17 15:48:14 [INFO] httpx: HTTP Request: GET https://dqhovbhgncpvruxuegms.supabase.co/rest/v1/contactos?select=%2A "HTTP/2 200 OK"
+2026-11-17 20:13:19 [ERROR] mvc.models.model_contactos: ERROR 100: supabase_url is required
+2026-11-17 20:13:19 [ERROR] mvc.models.model_contactos: ERROR 101: 'ModelContactos' object has no attribute 'supabase'
+2026-11-17 20:14:37 [INFO] httpx: HTTP Request: GET https://dqhovbhgncpvruxuegms.supabase.co/rest/v1/contactos?select=%2A "HTTP/2 200 OK"
+2026-11-17 20:14:41 [INFO] httpx: HTTP Request: GET https://dqhovbhgncpvruxuegms.supabase.co/rest/v1/contactos?select=%2A&id_contacto=eq.14 "HTTP/2 200 OK"
+2026-11-17 20:14:49 [INFO] httpx: HTTP Request: GET https://dqhovbhgncpvruxuegms.supabase.co/rest/v1/contactos?select=%2A "HTTP/2 200 OK"
+2026-11-17 20:14:52 [INFO] httpx: HTTP Request: GET https://dqhovbhgncpvruxuegms.supabase.co/rest/v1/contactos?select=%2A&id_contacto=eq.1 "HTTP/2 200 OK"
+2026-11-17 20:14:59 [INFO] httpx: HTTP Request: PATCH https://dqhovbhgncpvruxuegms.supabase.co/rest/v1/contactos?id_contacto=eq.1 "HTTP/2 200 OK"
+2026-11-17 20:15:01 [INFO] httpx: HTTP Request: GET https://dqhovbhgncpvruxuegms.supabase.co/rest/v1/contactos?select=%2A "HTTP/2 200 OK"
+2026-11-17 20:15:07 [INFO] httpx: HTTP Request: GET https://dqhovbhgncpvruxuegms.supabase.co/rest/v1/contactos?select=%2A&id_contacto=eq.14 "HTTP/2 200 OK"
+2026-11-17 20:15:09 [INFO] httpx: HTTP Request: DELETE https://dqhovbhgncpvruxuegms.supabase.co/rest/v1/contactos?id_contacto=eq.14 "HTTP/2 200 OK"
+2026-11-17 20:15:11 [INFO] httpx: HTTP Request: GET https://dqhovbhgncpvruxuegms.supabase.co/rest/v1/contactos?select=%2A "HTTP/2 200 OK"
+2026-11-17 20:15:18 [INFO] httpx: HTTP Request: GET https://dqhovbhgncpvruxuegms.supabase.co/rest/v1/contactos?select=%2A&id_contacto=eq.16 "HTTP/2 200 OK"
+2026-11-17 20:15:21 [INFO] httpx: HTTP Request: DELETE https://dqhovbhgncpvruxuegms.supabase.co/rest/v1/contactos?id_contacto=eq.16 "HTTP/2 200 OK"
+2026-11-17 20:15:23 [INFO] httpx: HTTP Request: GET https://dqhovbhgncpvruxuegms.supabase.co/rest/v1/contactos?select=%2A "HTTP/2 200 OK"
