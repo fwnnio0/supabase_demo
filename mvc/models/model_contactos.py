@@ -76,12 +76,13 @@ class ModelContactos:
             return []
 
 
-    def insertarContacto(self, nombre:str, email:str, telefono:str):
+    def insertarContacto(self, nombre:str, email:str, telefono:str, foto:str):
         try:
             data = {
                 "nombre": nombre,
                 "email": email,
-                "telefono": telefono
+                "telefono": telefono,
+                "foto": foto
             }
             response = self.supabase.table("contactos").insert(data).execute()
             return response.data
@@ -100,7 +101,7 @@ class ModelContactos:
             logger.error(f"ERROR 104: {str(error)}")
             print(f"ERROR 104: {error.args[0]}")
 
-    def actualizarContacto(self, id_contacto:str, nombre, email, telefono):
+    def actualizarContacto(self, id_contacto:str, nombre:str, email:str, telefono:str, foto:str):
         try:
             id = self.validar_hash(id_contacto)
             if id is None:
@@ -108,7 +109,8 @@ class ModelContactos:
             valores_nuevos = {
                 "nombre": nombre,
                 "email": email,
-                "telefono": telefono
+                "telefono": telefono,
+                "foto": foto
             }
             response = self.supabase.table("contactos").update(valores_nuevos).eq("id_contacto", id).execute()
             return response.data
@@ -122,6 +124,6 @@ if __name__ == "__main__":
     contactos = model_contactos.obtenerContactos()
     print(contactos)
     print(model_contactos.buscarContacto(contactos[0]["id_contacto"]))
-    # print(model_contactos.insertarContacto("hola", "hola@gmail.com", "2222"))
+    # print(model_contactos.insertarContacto("hola", "hola@gmail.com", "2222", "foto.jpg"))
     # print(model_contactos.borrarContacto(contactos[0]["id_contacto"]))
-    # print(model_contactos.actualizarContacto(contactos[0]["id_contacto"], "Dejah modificada", "dejah11@gmail.com", "444444"))
+    # print(model_contactos.actualizarContacto(contactos[0]["id_contacto"], "Dejah modificada", "dejah11@gmail.com", "444444", "foto.jpg"))
